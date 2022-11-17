@@ -41,6 +41,22 @@ int main(void)
 		}
 		printf("\n");
 	}
+		for(i=1;i<=20000;i++)
+	{
+		printf("%2d : ",i);
+	
+	/*100이하 자연수 약수 출력
+	ex) 4 : 1 2 4
+	    5 : 1 5*/		
+			for(j=1;j<=i;j++)
+		{
+			if(i%j==0)
+			{
+			printf("%d ",j);
+			}
+		}
+		printf("\n");
+	}
 	return 0;
 }
 
