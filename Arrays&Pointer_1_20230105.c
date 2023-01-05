@@ -20,6 +20,15 @@
   printf("\n%d %d\n", arr[1], *(arr)+1);      //*(arr)은 arr의 첫번째 값을 주소값으로 간접적으로 나타냄
   printf("\n%d %d\n\n", arr[2], *(arr)+2);    //*(arr)+1은 arr의 첫째 값에 1을 더함
   
+  int *ap = arr;
+  printf("%u %u\n", ap, arr);
+  printf("%u\n", ap +1);    //printf("\n%d\n",arr+1);
+  printf("%u\n\n",ap +2);   //printf("\n%d\n\n",arr+2);  와 같다
+  
+  printf("%d %d\n", *(ap + 0), ap[0]);  // printf("\n%d %d\n", arr[0], *(arr)+0);
+  printf("%d %d\n", *(ap + 1), ap[1]);  // printf("\n%d %d\n", arr[1], *(arr)+1);  와 같다
+  printf("%d %d\n", *(ap + 2), ap[2]);  // printf("\n%d %d\n\n", arr[2], *(arr)+2);
+  
 
   return 0;
  }
